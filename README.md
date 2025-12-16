@@ -111,7 +111,7 @@ IQ-TREE produces multiple output files during execution (12 files for the sample
 ### 04 iTOL: visualization of unrooted tree
 At this stage, the `.treefile` produced by IQ-TREE represents an unrooted phylogeny. This tree can be inspected using several visualization tools. **iTOL** ([`Interactive Tree Of Life`](https://itol.embl.de/login.cgi)) is a free, web-based tool that allows quick visualization and basic annotation of phylogenetic trees.
 The IQ-TREE `.treefile` can be uploaded directly to iTOL for preliminary inspection of overall topology and branch support prior to rooting and final figure generation. For the sample data, the unrooted tree looks like this:
-<img width="362" height="290" alt="image" src="https://github.com/user-attachments/assets/9eab1e18-3818-43a4-a3c9-79741ad50c7d" />
+<img width="629" height="503" alt="image" src="https://github.com/user-attachments/assets/ed9d509a-7914-4c99-a8d6-3f11e44495c1" />
 
 ## R-based visualization
 
