@@ -1,1 +1,6 @@
+# Methods
+Sequence data from 36 specimens were used to recover the phylogeny. The sample consisted of 31 domestic and wild cat specimens from the subfamily Felinae (Carnivora: Felidae), along with four outgroup taxa from the carnivoran families Hyaenidae, Viverridae, Nandinidae, and Canidae, and one species from the family Manidae, a clade considered the sister group to Carnivora.
 
+Three gene regions were used for phylogenetic inference: CO1, CytB, and ND1. Each gene was stored in a separate FASTA file and concatenated prior to alignment. For each gene, sequences were aligned independently using MAFFT v7. Alignments were inspected to confirm that sequence lengths and taxon representation were consistent.
+
+Partition information corresponding to individual genes was generated in a NEXUS file to allow gene-specific model selection during phylogenetic inference. Phylogenetic analyses were conducted using the maximum-likelihood–based software IQ-TREE 2. The resulting unrooted phylogeny was inspected using the iTOL online tool. The tree was then rooted and visualized in R using the ape package, with bootstrap values mapped onto the inferred topology, and exported for later use. Final tree figures can be further edited using additional R packages such as ggtree or other external software.
