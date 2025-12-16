@@ -13,7 +13,18 @@ The pipeline requires FASTA files containing nucleotide sequences, with one file
 
 ## Linux-based phylogenetic inference
 
-### 00 Environment setup
+### 00 Module load
+For this pipeline you will need MAFFT and IQ-TREE. These modules are available on the [`VT ARC systems`](https://www.docs.arc.vt.edu/software/01table.html).
+To check available versions of MAFFT and IQ-TREE:
+```
+module spider mafft
+module spider iq-tree
+```
+To load MAFFT and IQ-TREE:
+```
+module load MAFFT/7.526-GCC-13.2.0-with-extensions #Or other available versions of MAFFT
+module load IQ-TREE/2.3.6-gompi-2023a #Or other available versions of IQ-TREE
+```
 
 ### 01 Sequence concatienation
 
