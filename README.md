@@ -96,13 +96,22 @@ end;
 ```
 The presence of the partitions file can be confirmed using:
 ```bash
+#This should list the newly created partitions file.
 ls *.nex 
 ```
-This should list the newly created partitions file.
+IQ-TREE was executed using the partition file defined above to perform a partitioned maximum-likelihood analysis with ultrafast bootstrap support.
+```bash
+iqtree2 -p cats_genes.nex -B 1000 -nt AUTO
+```
+IQ-TREE produces multiple output files during execution (12 files for the sample data run). The primary output used in subsequent steps is the .treefile, which contains the inferred phylogeny with branch lengths and support values:
+<img width="5241" height="403" alt="image" src="https://github.com/user-attachments/assets/a2cd602c-91cc-43dd-aba6-2d6bb40e8879" />
 
 ## Preliminary tree inspection
 
 ### 04 iTOL: visualization of unrooted tree
+At this stage, the `.treefile` produced by IQ-TREE represents an unrooted phylogeny. This tree can be inspected using several visualization tools. **iTOL** ([`Interactive Tree Of Life`](https://itol.embl.de/login.cgi)) is a free, web-based tool that allows quick visualization and basic annotation of phylogenetic trees.
+The IQ-TREE `.treefile` can be uploaded directly to iTOL for preliminary inspection of overall topology and branch support prior to rooting and final figure generation. For the sample data, the unrooted tree looks like this:
+<img width="975" height="779" alt="image" src="https://github.com/user-attachments/assets/b4f0d694-2b7e-4633-96f6-f79cab70f919" />
 
 ## R-based visualization
 
