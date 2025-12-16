@@ -105,7 +105,7 @@ IQ-TREE was executed using the partition file defined above to perform a partiti
 #Output file names are based on the partitions file name, in this case "cats_genes.nex"
 iqtree2 -p cats_genes.nex -B 1000 -nt AUTO
 ```
-IQ-TREE produces multiple output files during execution (12 files for the sample data run). The primary output used in subsequent steps is the .treefile, which contains the inferred phylogeny with branch lengths and support values:
+IQ-TREE produces multiple output files during execution (12 files for the sample data run). The primary output used in subsequent steps is the [`treefile`](Files/Linux_Output/cats_genes.nex.treefile), which contains the inferred phylogeny with branch lengths and support values:
 <img width="5241" height="403" alt="image" src="https://github.com/user-attachments/assets/a2cd602c-91cc-43dd-aba6-2d6bb40e8879" />
 
 ## Preliminary tree inspection
