@@ -87,7 +87,7 @@ nano cats_genes.nex
 ```
 The following content was added to define gene partitions:
 ```text
-`# Nexus`
+# Nexus
 begin sets;
    charset part1 = CO1_aln.fasta;
    charset part2 = CytB_aln.fasta;
