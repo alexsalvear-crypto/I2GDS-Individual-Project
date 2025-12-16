@@ -197,4 +197,4 @@ nodelabels(
 add.scale.bar()
 dev.off()
 ```
-The output file ([`cats_rooted_tree.pdf`](Files/R_Output/cats_rooted_tree.pdf)) will be saved in the current working directory. The rooted tree can also be used with other tools or R packages for further editing.
+The output file ([`cats_rooted_tree.pdf`](Files/R_Output/cats_rooted_tree.pdf)) will be saved in the current working directory. The rooted tree can also be used with other tools or R packages for further editing. See [`Results`](Docs/Results.md) for details of the phylogeny recovered from the sample data.
