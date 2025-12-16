@@ -14,7 +14,7 @@ The pipeline requires FASTA files containing nucleotide sequences, with one file
 ## Linux-based phylogenetic inference
 
 ### 00 Module load
-For this pipeline you will need MAFFT and IQ-TREE. These modules are available on the [`VT ARC systems`](https://www.docs.arc.vt.edu/software/01table.html).
+For this pipeline we used MAFFT and IQ-TREE. These modules are available on the [`VT ARC systems`](https://www.docs.arc.vt.edu/software/01table.html).
 To check available versions of MAFFT and IQ-TREE:
 ```bash
 module spider mafft
@@ -40,6 +40,14 @@ If both MAFFT and IQ-TREE are working, you should see them listed as follows:
 <img width="3166" height="441" alt="image" src="https://github.com/user-attachments/assets/0f6725e5-3cc8-4ae1-a5bb-ebf23be90639" />
 
 ### 01 Sequence concatienation
+Sequences were concatenated prior to alignment to generate one combined FASTA file per gene. Each concatenated file contains sequences from all specimens for a single gene and serves as the input for multiple sequence alignment. In the provided sample data, three gene regions are used (**CO1**, **CytB**, and **ND1**). Three concatenated FASTA files are generated, one for each gene accordingly.
+```bash
+#Using "*" and the gene name will concatenate all FASTA files for that gene in the working directory.
+#Output file names are arbitrary, here they are formatted as "Gene_all.fasta".
+cat *ND1*.fasta > ND1_all.fasta
+cat *CytB*.fasta > CytB_all.fasta
+cat *CO1*.fasta > CO1_all.fasta
+```
 
 ### 02 MAFFT: multiple sequence alignment
 
