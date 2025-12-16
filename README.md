@@ -82,7 +82,8 @@ IQ-TREE was used to reconstruct phylogenetic relationships under a maximum-likel
 For the sample dataset, three genes (**CO1**, **CytB**, and **ND1**) were included and defined as separate partitions ("part1", "part2", and "part3") in a Nexus file.
 To create a partitions file, a new Nexus file was generated:
 ```bash
-# Create a new Nexus file
+#Create a new Nexus file
+#File name is arbitrary, in this case "cats_genes.nex"
 nano cats_genes.nex
 ```
 The following content was added to define gene partitions:
@@ -101,6 +102,7 @@ ls *.nex
 ```
 IQ-TREE was executed using the partition file defined above to perform a partitioned maximum-likelihood analysis with ultrafast bootstrap support.
 ```bash
+#Output file names are based on the partitions file name, in this case "cats_genes.nex"
 iqtree2 -p cats_genes.nex -B 1000 -nt AUTO
 ```
 IQ-TREE produces multiple output files during execution (12 files for the sample data run). The primary output used in subsequent steps is the .treefile, which contains the inferred phylogeny with branch lengths and support values:
@@ -125,3 +127,13 @@ library(ape)
 packageVersion("ape")
 # This will display the installed version of ape
 ```
+After confirming the ape package is installed and active, set the working directory and import the tree:
+```r
+#Set the working directory.
+setwd("/home/asalvear/Sequences")
+getwd()
+#Import tree using the ".treefile" file name.
+tree <- read.tree("cats_genes.nex.treefile")
+```
+If the file is read successfully, the tree object will appear in the Environment panel in RStudio (upper right):
+<img width="322" height="134" alt="image" src="https://github.com/user-attachments/assets/a648e6e1-f8c9-4a76-bc78-402873c85a54" />
