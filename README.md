@@ -25,6 +25,18 @@ To load MAFFT and IQ-TREE:
 module load MAFFT/7.526-GCC-13.2.0-with-extensions #Or other available versions of MAFFT
 module load IQ-TREE/2.3.6-gompi-2023a #Or other available versions of IQ-TREE
 ```
+To confirm both modules are working:
+```
+which mafft
+mafft --version
+which iq-tree
+iq-tree --version
+```
+This will print the loaded version of each tool. Additionally, this can be confirmed by listing active modules:
+```bash
+module list
+```
+
 
 ### 01 Sequence concatienation
 
