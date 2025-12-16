@@ -1,0 +1,289 @@
+IQ-TREE 2.3.6 built Mar 31 2025
+
+Partition file name: cats_genes.nex
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 593362
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 36 taxa with 3 partitions and 3651 total sites (8.33333% missing data)
+
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	DNA	33	1554	521	481	984	984	part1
+   2	DNA	33	1140	442	398	633	633	part2
+   3	DNA	33	957	354	307	539	539	part3
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: TIM2+F+R3:part1,TIM2+F+I+G4:part2,TIM2+F+I+R2:part3
+
+List of best-fit models per partition:
+
+  ID  Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+   1  TIM2+F+R3         -9164.602   18351.203 - 6.95e-310   18351.374 - 1.16e-310   18410.038 -        0
+   2  TIM2+F+I+G4       -7462.785   14943.569 - 6.95e-310   14943.729 - 1.16e-310   14988.918 -        0
+   3  TIM2+F+I+R2       -6011.100   12042.201 - 6.95e-310   12042.433 - 1.16e-310   12090.839 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model with separate substitution models and separate rates across sites
+
+  ID  Model           Speed  Parameters
+   1  TIM2+F+R3      0.9514  TIM2{7.39014,72.3339,100}+F{0.27011,0.233125,0.176413,0.320351}+R3{0.644652,0.0138252,0.176273,1.63127,0.179076,3.92872}
+   2  TIM2+F+I+G4    1.0396  TIM2{3.84439,30.4867,54.1472}+F{0.295175,0.301236,0.131756,0.271833}+I{0.492045}+G4{1.31056}
+   3  TIM2+F+I+R2    1.0319  TIM2{3.4624,22.7721,53.8811}+F{0.314336,0.300422,0.120543,0.264699}+I{0.481885}+R2{0.226797,0.432429,0.291318,3.09602}
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -22633.9956 (s.e. 356.6909)
+Unconstrained log-likelihood (without tree): -14422.9973
+Number of free parameters (#branches + #model parameters): 98
+Akaike information criterion (AIC) score: 45463.9911
+Corrected Akaike information criterion (AICc) score: 45469.4540
+Bayesian information criterion (BIC) score: 46071.8613
+
+Total tree length (sum of branch lengths): 2.9553
+Sum of internal branch lengths: 0.8493 (28.7370% of tree length)
+
+WARNING: 2 near-zero internal branches (<0.0003) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon '001_Acinonyx_jubensis' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++--001_Acinonyx_jubensis
+|
++--002_Acinonyx_jubensis
+|
+|   +--026_Herpailurus_yagouaroundi
++---| (100)
+    |           +**005_Catopuma_badia
+    |        +--| (93)
+    |        |  +**006_Catopuma_badia
+    |     +--| (100)
+    |     |  +--007_Catopuma_badia
+    |  +--| (74)
+    |  |  |         +**008_Caracal_caracal
+    |  |  |      +--| (99)
+    |  |  |      |  +**009_Caracal_caracal
+    |  |  |  +---| (100)
+    |  |  |  |   +**010_Caracal_caracal
+    |  |  +--| (72)
+    |  |     |           +--012_Felis_bieti
+    |  |     |        +--| (97)
+    |  |     |        |  |              +--013_Felis_catus
+    |  |     |        |  |           +--| (97)
+    |  |     |        |  |           |  +--017_Felis_lybica
+    |  |     |        |  |        +--| (94)
+    |  |     |        |  |        |  +--015_Felis_catus_1
+    |  |     |        |  |     +**| (61)
+    |  |     |        |  |     |  +--015_Felis_catus
+    |  |     |        |  |  +--| (99)
+    |  |     |        |  |  |  +--014_Felis_catus
+    |  |     |        |  +**| (47)
+    |  |     |        |     |  +--023_Felis_silvestris
+    |  |     |        |     +--| (100)
+    |  |     |        |        +--024_Felis_silvestris
+    |  |     |     +--| (100)
+    |  |     |     |  |     +**018_Felis_margarita
+    |  |     |     |  |  +--| (98)
+    |  |     |     |  |  |  +**019_Felis_margarita
+    |  |     |     |  +--| (100)
+    |  |     |     |     +--020_Felis_margarita
+    |  |     |  +--| (100)
+    |  |     |  |  |  +--016_Felis_chaus
+    |  |     |  |  +--| (78)
+    |  |     |  |     |  +**021_Felis_nigripes
+    |  |     |  |     +--| (100)
+    |  |     |  |        +**022_Felis_nigripes
+    |  |     +--| (67)
+    |  |        |           +--027_Leopardus_pardalis
+    |  |        |        +--| (100)
+    |  |        |        |  |  +--028_Leopardus_pardalis
+    |  |        |        |  +--| (100)
+    |  |        |        |     +--029_Leopardus_pardalis
+    |  |        |     +--| (92)
+    |  |        |     |  +--031_Leopardus_tigrinus
+    |  |        |  +--| (100)
+    |  |        |  |  |     +--030_Leopardus_tigrinus
+    |  |        |  |  |  +--| (100)
+    |  |        |  |  |  |  +--032_Leopardus_tigrinus
+    |  |        |  |  +--| (93)
+    |  |        |  |     +--031_Leopardus_tigrinus_2
+    |  |        +--| (86)
+    |  |           |      +-----034_Nandinia_binotata
+    |  |           |   +--| (63)
+    |  |           |   |  |      +----------------011_Canis_lupus
+    |  |           |   |  +------| (97)
+    |  |           |   |         +--------------------------------------033_Manis_tricuspis
+    |  |           +---| (100)
+    |  |               |  +-------004_Arctogalidia_trivirgata
+    |  |               +--| (80)
+    |  |                  +------------025_Hyaena_hyaena
+    +--| (82)
+       +---027_Herpailurus_yagouaroundi
+
+Tree in newick format:
+
+(001_Acinonyx_jubensis:0.0010096611,002_Acinonyx_jubensis:0.0017808398,(026_Herpailurus_yagouaroundi:0.0637256415,((((005_Catopuma_badia:0.0000010054,006_Catopuma_badia:0.0000010054)93:0.0003298624,007_Catopuma_badia:0.0013413860)100:0.0718759615,(((008_Caracal_caracal:0.0000010054,009_Caracal_caracal:0.0000010054)99:0.0013865118,010_Caracal_caracal:0.0000010054)100:0.0905690808,((((012_Felis_bieti:0.0064995248,(((((013_Felis_catus:0.0008291127,017_Felis_lybica:0.0002753477)97:0.0013899612,015_Felis_catus_1:0.0020475363)94:0.0013883452,015_Felis_catus:0.0067988608)61:0.0000020813,014_Felis_catus:0.0036238088)99:0.0019234165,(023_Felis_silvestris:0.0005712647,024_Felis_silvestris:0.0008132995)100:0.0025178045)47:0.0000020810)97:0.0061285564,((018_Felis_margarita:0.0000010054,019_Felis_margarita:0.0000010054)98:0.0008389415,020_Felis_margarita:0.0008247660)100:0.0133286608)100:0.0258175028,(016_Felis_chaus:0.0481660671,(021_Felis_nigripes:0.0000010054,022_Felis_nigripes:0.0000010054)100:0.0597751298)78:0.0077459449)100:0.0437692912,((((027_Leopardus_pardalis:0.0185086874,(028_Leopardus_pardalis:0.0045320297,029_Leopardus_pardalis:0.0040159933)100:0.0182547579)100:0.0235125028,031_Leopardus_tigrinus:0.0485028681)92:0.0045335111,((030_Leopardus_tigrinus:0.0007960334,032_Leopardus_tigrinus:0.0003168978)100:0.0413206198,031_Leopardus_tigrinus_2:0.0451993029)93:0.0128644057)100:0.0350714491,((034_Nandinia_binotata:0.1308155617,(011_Canis_lupus:0.3533147173,033_Manis_tricuspis:0.7908321728)97:0.1412685286)63:0.0402914890,(004_Arctogalidia_trivirgata:0.1672310708,025_Hyaena_hyaena:0.2603853525)80:0.0377947528)100:0.0974218067)86:0.0118017579)67:0.0076459358)72:0.0105355193)74:0.0150678085,027_Herpailurus_yagouaroundi:0.0809078026)82:0.0039641496)100:0.0814427989);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -22634.047322
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--001_Acinonyx_jubensis
+|
++--002_Acinonyx_jubensis
+|
+|   +--026_Herpailurus_yagouaroundi
++---| (100)
+    |           +--005_Catopuma_badia
+    |        +--| (93)
+    |        |  +--006_Catopuma_badia
+    |     +--| (100)
+    |     |  +--007_Catopuma_badia
+    |  +--| (74)
+    |  |  |         +--008_Caracal_caracal
+    |  |  |      +--| (99)
+    |  |  |      |  +--009_Caracal_caracal
+    |  |  |  +---| (100)
+    |  |  |  |   +--010_Caracal_caracal
+    |  |  +--| (72)
+    |  |     |           +--012_Felis_bieti
+    |  |     |        +--| (97)
+    |  |     |        |  |              +--013_Felis_catus
+    |  |     |        |  |           +--| (97)
+    |  |     |        |  |           |  +--017_Felis_lybica
+    |  |     |        |  |        +--| (94)
+    |  |     |        |  |        |  +--015_Felis_catus_1
+    |  |     |        |  |     +--| (61)
+    |  |     |        |  |     |  +--015_Felis_catus
+    |  |     |        |  |  +--| (99)
+    |  |     |        |  |  |  +--014_Felis_catus
+    |  |     |        |  +--| (47)
+    |  |     |        |     |  +--023_Felis_silvestris
+    |  |     |        |     +--| (100)
+    |  |     |        |        +--024_Felis_silvestris
+    |  |     |     +--| (100)
+    |  |     |     |  |     +--018_Felis_margarita
+    |  |     |     |  |  +--| (98)
+    |  |     |     |  |  |  +--019_Felis_margarita
+    |  |     |     |  +--| (100)
+    |  |     |     |     +--020_Felis_margarita
+    |  |     |  +--| (100)
+    |  |     |  |  |  +--016_Felis_chaus
+    |  |     |  |  +--| (78)
+    |  |     |  |     |  +--021_Felis_nigripes
+    |  |     |  |     +--| (100)
+    |  |     |  |        +--022_Felis_nigripes
+    |  |     +--| (67)
+    |  |        |           +--027_Leopardus_pardalis
+    |  |        |        +--| (100)
+    |  |        |        |  |  +--028_Leopardus_pardalis
+    |  |        |        |  +--| (100)
+    |  |        |        |     +--029_Leopardus_pardalis
+    |  |        |     +--| (92)
+    |  |        |     |  +--031_Leopardus_tigrinus
+    |  |        |  +--| (100)
+    |  |        |  |  |     +--030_Leopardus_tigrinus
+    |  |        |  |  |  +--| (100)
+    |  |        |  |  |  |  +--032_Leopardus_tigrinus
+    |  |        |  |  +--| (93)
+    |  |        |  |     +--031_Leopardus_tigrinus_2
+    |  |        +--| (86)
+    |  |           |      +-----034_Nandinia_binotata
+    |  |           |   +--| (63)
+    |  |           |   |  |      +----------------011_Canis_lupus
+    |  |           |   |  +------| (97)
+    |  |           |   |         +--------------------------------------033_Manis_tricuspis
+    |  |           +---| (100)
+    |  |               |  +-------004_Arctogalidia_trivirgata
+    |  |               +--| (80)
+    |  |                  +------------025_Hyaena_hyaena
+    +--| (82)
+       +---027_Herpailurus_yagouaroundi
+
+
+Consensus tree in newick format: 
+
+(001_Acinonyx_jubensis:0.0010118138,002_Acinonyx_jubensis:0.0017792272,(026_Herpailurus_yagouaroundi:0.0637351139,((((005_Catopuma_badia:0.0000026047,006_Catopuma_badia:0.0000026047)93:0.0003289295,007_Catopuma_badia:0.0013416195)100:0.0718862218,(((008_Caracal_caracal:0.0000026047,009_Caracal_caracal:0.0000026047)99:0.0013839423,010_Caracal_caracal:0.0000026047)100:0.0905657564,((((012_Felis_bieti:0.0064987567,(((((013_Felis_catus:0.0008283667,017_Felis_lybica:0.0002740648)97:0.0013901609,015_Felis_catus_1:0.0020467455)94:0.0013870666,015_Felis_catus:0.0067990840)61:0.0000026052,014_Felis_catus:0.0036234925)99:0.0019226742,(023_Felis_silvestris:0.0005700815,024_Felis_silvestris:0.0008128760)100:0.0025172032)47:0.0000026075)97:0.0061283383,((018_Felis_margarita:0.0000026047,019_Felis_margarita:0.0000026047)98:0.0008386919,020_Felis_margarita:0.0008242197)100:0.0133287615)100:0.0258169411,(016_Felis_chaus:0.0481657017,(021_Felis_nigripes:0.0000026047,022_Felis_nigripes:0.0000026047)100:0.0597739771)78:0.0077445408)100:0.0437741137,((((027_Leopardus_pardalis:0.0185076378,(028_Leopardus_pardalis:0.0045318355,029_Leopardus_pardalis:0.0040148593)100:0.0182543207)100:0.0235119176,031_Leopardus_tigrinus:0.0485011066)92:0.0045324365,((030_Leopardus_tigrinus:0.0007963578,032_Leopardus_tigrinus:0.0003164828)100:0.0413157854,031_Leopardus_tigrinus_2:0.0452000586)93:0.0128697616)100:0.0350770227,((034_Nandinia_binotata:0.1308150551,(011_Canis_lupus:0.3533088705,033_Manis_tricuspis:0.7908099341)97:0.1412600535)63:0.0402919934,(004_Arctogalidia_trivirgata:0.1672253769,025_Hyaena_hyaena:0.2603811667)80:0.0377944419)100:0.0974137798)86:0.0117958247)67:0.0076431465)72:0.0105488040)74:0.0148218563,027_Herpailurus_yagouaroundi:0.0809629975)82:0.0041936414)100:0.0813898662);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t cats_genes.nex.treefile -p cats_genes.nex.best_model.nex
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s <alignment.phy> --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s <alignment.phy> --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Mon Dec 15 12:27:40 2025
+Total CPU time used: 519.999512 seconds (0h:8m:39s)
+Total wall-clock time used: 285.1832322 seconds (0h:4m:45s)
+

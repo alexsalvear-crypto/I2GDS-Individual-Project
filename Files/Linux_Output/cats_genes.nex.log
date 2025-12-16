@@ -1,0 +1,365 @@
+IQ-TREE multicore version 2.3.6 for Linux x86 64-bit built Mar 31 2025
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    owl2 (AVX512, FMA3, 755 GB RAM)
+Command: iqtree2 -p cats_genes.nex -B 1000 -nt AUTO
+Seed:    593362 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon Dec 15 12:22:54 2025
+Kernel:  AVX+FMA - auto-detect threads (96 CPU cores detected)
+
+Reading partition model file cats_genes.nex ...
+NOTE: No CharPartition defined, use all CharSets
+
+Loading 3 partitions...
+Reading alignment file CO1_aln.fasta ... Fasta format detected
+Reading fasta file: done in 0.000677343 secs using 50.34% CPU
+Alignment most likely contains DNA/RNA sequences
+Alignment has 33 sequences with 1554 columns, 521 distinct patterns
+481 parsimony-informative, 89 singleton sites, 983 constant sites
+                              Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 4.44762e-05 secs using 94.43% CPU
+   1  001_Acinonyx_jubensis           0.58%    passed     93.03%
+   2  002_Acinonyx_jubensis           0.58%    passed     92.87%
+   3  026_Herpailurus_yagouaroundi    0.58%    passed     99.83%
+   4  005_Catopuma_badia              0.58%    passed     99.71%
+   5  006_Catopuma_badia              0.58%    passed     99.71%
+   6  007_Catopuma_badia              0.58%    passed     99.44%
+   7  008_Caracal_caracal             0.58%    passed     88.48%
+   8  009_Caracal_caracal             0.58%    passed     88.48%
+   9  010_Caracal_caracal             0.58%    passed     88.48%
+  10  012_Felis_bieti                 0.58%    passed     93.03%
+  11  013_Felis_catus                 0.58%    passed     93.72%
+  12  017_Felis_lybica                0.58%    passed     92.00%
+  13  015_Felis_catus_1               0.58%    passed     94.90%
+  14  014_Felis_catus                 0.58%    passed     82.25%
+  15  023_Felis_silvestris            0.58%    passed     92.46%
+  16  024_Felis_silvestris            0.58%    passed     90.69%
+  17  018_Felis_margarita             0.58%    passed     95.07%
+  18  019_Felis_margarita             0.58%    passed     95.07%
+  19  020_Felis_margarita             0.58%    passed     95.33%
+  20  016_Felis_chaus                 0.58%    passed     89.37%
+  21  021_Felis_nigripes              0.58%    passed     74.59%
+  22  022_Felis_nigripes              0.58%    passed     74.59%
+  23  027_Leopardus_pardalis          0.58%    passed     99.36%
+  24  028_Leopardus_pardalis          0.58%    passed     88.67%
+  25  029_Leopardus_pardalis          0.58%    passed     88.59%
+  26  030_Leopardus_tigrinus          0.58%    passed     91.51%
+  27  032_Leopardus_tigrinus          0.58%    passed     88.64%
+  28  031_Leopardus_tigrinus_2        0.58%    passed     85.77%
+  29  034_Nandinia_binotata           0.58%    failed      4.38%
+  30  004_Arctogalidia_trivirgata     0.58%    passed     21.63%
+  31  025_Hyaena_hyaena               0.58%    passed     30.08%
+  32  011_Canis_lupus                 0.58%    passed     97.53%
+  33  033_Manis_tricuspis             0.00%    passed     60.03%
+****  TOTAL                           0.56%  1 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file CytB_aln.fasta ... Fasta format detected
+Reading fasta file: done in 0.000495611 secs using 98.06% CPU
+Alignment most likely contains DNA/RNA sequences
+Alignment has 33 sequences with 1140 columns, 442 distinct patterns
+398 parsimony-informative, 109 singleton sites, 632 constant sites
+                              Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 6.96443e-05 secs using 93.33% CPU
+   1  001_Acinonyx_jubensis           0.00%    passed     89.47%
+   2  002_Acinonyx_jubensis           0.00%    passed     91.30%
+   3  005_Catopuma_badia              0.00%    passed     87.53%
+   4  006_Catopuma_badia              0.00%    passed     87.53%
+   5  007_Catopuma_badia              0.00%    passed     93.62%
+   6  027_Leopardus_pardalis          0.00%    passed     96.99%
+   7  028_Leopardus_pardalis          0.00%    passed     96.53%
+   8  029_Leopardus_pardalis          0.00%    passed     89.20%
+   9  031_Leopardus_tigrinus          0.00%    passed     84.33%
+  10  030_Leopardus_tigrinus          0.00%    passed     80.96%
+  11  032_Leopardus_tigrinus          0.00%    passed     80.96%
+  12  012_Felis_bieti                 0.00%    passed     95.54%
+  13  013_Felis_catus                 0.00%    passed     97.63%
+  14  017_Felis_lybica                0.00%    passed     97.63%
+  15  014_Felis_catus                 0.00%    passed     97.63%
+  16  023_Felis_silvestris            0.00%    passed     99.98%
+  17  024_Felis_silvestris            0.00%    passed     99.69%
+  18  015_Felis_catus                 0.00%    passed     95.84%
+  19  018_Felis_margarita             0.00%    passed     97.61%
+  20  019_Felis_margarita             0.00%    passed     97.61%
+  21  020_Felis_margarita             0.00%    passed     98.28%
+  22  016_Felis_chaus                 0.00%    passed     98.67%
+  23  021_Felis_nigripes              0.00%    passed     83.09%
+  24  022_Felis_nigripes              0.00%    passed     83.09%
+  25  027_Herpailurus_yagouaroundi    0.00%    passed     93.23%
+  26  008_Caracal_caracal             0.00%    passed     89.44%
+  27  009_Caracal_caracal             0.00%    passed     89.44%
+  28  010_Caracal_caracal             0.00%    passed     93.16%
+  29  034_Nandinia_binotata           0.00%    passed     50.24%
+  30  004_Arctogalidia_trivirgata     0.00%    passed     38.42%
+  31  025_Hyaena_hyaena               0.00%    passed     29.61%
+  32  011_Canis_lupus                 0.00%    passed     23.84%
+  33  033_Manis_tricuspis             0.44%    failed      4.56%
+****  TOTAL                           0.01%  1 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file ND1_aln.fasta ... Fasta format detected
+Reading fasta file: done in 0.000419669 secs using 98.41% CPU
+Alignment most likely contains DNA/RNA sequences
+Alignment has 33 sequences with 957 columns, 354 distinct patterns
+307 parsimony-informative, 111 singleton sites, 539 constant sites
+                              Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.000117205 secs using 96.41% CPU
+   1  001_Acinonyx_jubensis           0.00%    passed     50.24%
+   2  002_Acinonyx_jubensis           0.10%    passed     65.69%
+   3  026_Herpailurus_yagouaroundi    0.10%    passed     88.33%
+   4  005_Catopuma_badia              0.10%    passed     92.67%
+   5  006_Catopuma_badia              0.10%    passed     92.67%
+   6  007_Catopuma_badia              0.10%    passed     92.67%
+   7  008_Caracal_caracal             0.10%    passed     99.55%
+   8  009_Caracal_caracal             0.10%    passed     99.55%
+   9  010_Caracal_caracal             0.10%    passed     99.77%
+  10  012_Felis_bieti                 0.10%    passed     99.00%
+  11  023_Felis_silvestris            0.10%    passed     99.55%
+  12  024_Felis_silvestris            0.10%    passed     98.62%
+  13  013_Felis_catus                 0.10%    passed     99.69%
+  14  017_Felis_lybica                0.10%    passed     99.05%
+  15  014_Felis_catus                 0.10%    passed     98.32%
+  16  015_Felis_catus                 0.00%    passed     97.96%
+  17  018_Felis_margarita             0.10%    passed     94.01%
+  18  019_Felis_margarita             0.10%    passed     94.01%
+  19  020_Felis_margarita             0.10%    passed     94.91%
+  20  021_Felis_nigripes              0.10%    passed     84.68%
+  21  022_Felis_nigripes              0.10%    passed     84.68%
+  22  016_Felis_chaus                 0.10%    passed     87.88%
+  23  027_Leopardus_pardalis          0.10%    passed     47.73%
+  24  028_Leopardus_pardalis          0.10%    passed     85.43%
+  25  029_Leopardus_pardalis          0.10%    passed     88.14%
+  26  031_Leopardus_tigrinus          0.10%    passed     79.25%
+  27  030_Leopardus_tigrinus          0.10%    passed     97.00%
+  28  032_Leopardus_tigrinus          0.10%    passed     98.09%
+  29  034_Nandinia_binotata           0.10%    passed     15.10%
+  30  004_Arctogalidia_trivirgata     0.21%    passed     64.98%
+  31  025_Hyaena_hyaena               0.10%    passed     31.84%
+  32  011_Canis_lupus                 0.10%    passed     26.20%
+  33  033_Manis_tricuspis             0.10%    failed      0.02%
+****  TOTAL                           0.10%  1 sequences failed composition chi2 test (p-value<5%; df=3)
+Subset	Type	Seqs	Sites	Infor	Invar	Model	Name
+1		33	1554	481	984		part1
+2		33	1140	398	633		part2
+3		33	957	307	539		part3
+Degree of missing data: 0.083
+Info: multi-threading strategy over partitions
+
+NOTE: 006_Catopuma_badia is identical to 005_Catopuma_badia but kept for subsequent analysis
+NOTE: 009_Caracal_caracal is identical to 008_Caracal_caracal but kept for subsequent analysis
+NOTE: 019_Felis_margarita is identical to 018_Felis_margarita but kept for subsequent analysis
+NOTE: 022_Felis_nigripes is identical to 021_Felis_nigripes but kept for subsequent analysis
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.002 seconds
+Measuring multi-threading efficiency up to 96 CPU cores
+Increase to 10 rounds for branch lengths
+1430 trees examined
+Threads: 1 / Time: 96.027 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -35797
+Threads: 2 / Time: 85.664 sec / Speedup: 1.121 / Efficiency: 56% / LogL: -35797
+Threads: 3 / Time: 74.531 sec / Speedup: 1.288 / Efficiency: 43% / LogL: -35797
+BEST NUMBER OF THREADS: 2
+
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Initial log-likelihood: -25403.194
+Current log-likelihood at step 1: -23184.967
+Current log-likelihood at step 2: -22826.962
+Current log-likelihood at step 3: -22732.983
+Current log-likelihood at step 4: -22729.413
+Parameters optimization took 3 rounds (0.333 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+Initial log-likelihood: -22699.822
+Current log-likelihood at step 1: -22698.234
+Current log-likelihood at step 2: -22697.394
+Partition-specific rates:  0.908 1.088 1.044
+Parameters optimization took 1 rounds (0.091 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Time for fast ML tree search: 0.554 seconds
+
+NOTE: ModelFinder requires 14 MB RAM!
+Selecting individual models for 3 charsets using BIC...
+Full partition model BIC score: 46080.843 (LnL: -22638.487  df:98)
+Partition information was printed to cats_genes.nex.best_scheme.nex
+Partition information in Raxml format was printed to cats_genes.nex.best_scheme
+
+All model information printed to cats_genes.nex.model.gz
+CPU time for ModelFinder: 483.818 seconds (0h:8m:3s)
+Wall-clock time for ModelFinder: 265.554 seconds (0h:4m:25s)
+Generating 1000 samples for ultrafast bootstrap (seed: 593362)...
+
+NOTE: 9 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -25240.993
+Current log-likelihood at step 1: -23274.864
+Current log-likelihood at step 2: -23119.414
+Current log-likelihood at step 3: -23046.605
+Current log-likelihood at step 4: -22965.606
+Current log-likelihood at step 5: -22874.677
+Current log-likelihood at step 6: -22648.909
+Current log-likelihood at step 7: -22642.509
+Current log-likelihood at step 8: -22640.949
+Current log-likelihood at step 9: -22640.361
+Current log-likelihood at step 10: -22640.011
+Current log-likelihood at step 11: -22639.779
+Current log-likelihood at step 12: -22639.602
+Current log-likelihood at step 13: -22639.458
+Current log-likelihood at step 14: -22639.338
+Current log-likelihood at step 15: -22639.227
+Current log-likelihood at step 16: -22639.132
+Partition-specific rates:  0.946 1.044 1.034
+Parameters optimization took 15 rounds (0.578 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.000103183 secs using 195.8% CPU
+Computing ML distances took 0.000145 sec (of wall-clock time) 0.000247 sec (of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Setting up auxiliary I and S matrices: done in 0.000190135 secs using 137.8% CPU
+Computing RapidNJ tree took 0.003452 sec (of wall-clock time) 0.002221 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -29690.369
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.286 second
+Computing log-likelihood of 98 initial trees ... 0.625 seconds
+Current best score: -22639.132
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -22639.132
+Current log-likelihood at step 1: -22639.045
+Parameters optimization took 0 rounds (0.032 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+BETTER TREE FOUND at iteration 1: -22639.045
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -22635.657
+Current log-likelihood at step 1: -22635.558
+Parameters optimization took 0 rounds (0.033 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+BETTER TREE FOUND at iteration 2: -22635.558
+Iteration 10 / LogL: -22635.579 / Time: 0h:4m:28s
+Iteration 20 / LogL: -22638.984 / Time: 0h:4m:29s
+Finish initializing candidate tree set (2)
+Current best tree score: -22635.558 / CPU time: 3.547
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -22635.585 / Time: 0h:4m:31s (0h:0m:14s left)
+Iteration 40 / LogL: -22653.601 / Time: 0h:4m:33s (0h:0m:11s left)
+Iteration 50 / LogL: -22638.952 / Time: 0h:4m:34s (0h:0m:9s left)
+Log-likelihood cutoff on original alignment: -22677.880
+Iteration 60 / LogL: -22653.598 / Time: 0h:4m:36s (0h:0m:7s left)
+Iteration 70 / LogL: -22638.953 / Time: 0h:4m:38s (0h:0m:5s left)
+Iteration 80 / LogL: -22635.620 / Time: 0h:4m:39s (0h:0m:3s left)
+Iteration 90 / LogL: -22635.644 / Time: 0h:4m:41s (0h:0m:2s left)
+Iteration 100 / LogL: -22653.597 / Time: 0h:4m:43s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -22677.743
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.999
+TREE SEARCH COMPLETED AFTER 103 ITERATIONS / Time: 0h:4m:43s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+Initial log-likelihood: -22635.558
+Current log-likelihood at step 1: -22635.479
+Current log-likelihood at step 2: -22635.405
+Current log-likelihood at step 3: -22635.336
+Current log-likelihood at step 4: -22635.270
+Current log-likelihood at step 5: -22635.207
+Current log-likelihood at step 6: -22635.148
+Current log-likelihood at step 7: -22635.091
+Current log-likelihood at step 8: -22635.036
+Current log-likelihood at step 9: -22634.984
+Current log-likelihood at step 10: -22634.933
+Current log-likelihood at step 11: -22634.884
+Current log-likelihood at step 12: -22634.837
+Current log-likelihood at step 13: -22634.793
+Current log-likelihood at step 14: -22634.750
+Current log-likelihood at step 15: -22634.709
+Current log-likelihood at step 16: -22634.669
+Current log-likelihood at step 17: -22634.632
+Current log-likelihood at step 18: -22634.596
+Current log-likelihood at step 19: -22634.561
+Current log-likelihood at step 20: -22634.528
+Current log-likelihood at step 21: -22634.495
+Current log-likelihood at step 22: -22634.465
+Current log-likelihood at step 23: -22634.435
+Current log-likelihood at step 24: -22634.406
+Current log-likelihood at step 25: -22634.379
+Current log-likelihood at step 26: -22634.352
+Current log-likelihood at step 27: -22634.327
+Current log-likelihood at step 28: -22634.303
+Current log-likelihood at step 29: -22634.280
+Current log-likelihood at step 30: -22634.258
+Current log-likelihood at step 31: -22634.235
+Current log-likelihood at step 32: -22634.215
+Current log-likelihood at step 33: -22634.195
+Current log-likelihood at step 34: -22634.178
+Current log-likelihood at step 35: -22634.159
+Current log-likelihood at step 36: -22634.143
+Current log-likelihood at step 37: -22634.128
+Current log-likelihood at step 38: -22634.114
+Current log-likelihood at step 39: -22634.099
+Current log-likelihood at step 40: -22634.086
+Current log-likelihood at step 41: -22634.072
+Current log-likelihood at step 42: -22634.060
+Current log-likelihood at step 43: -22634.048
+Current log-likelihood at step 44: -22634.037
+Current log-likelihood at step 45: -22634.026
+Current log-likelihood at step 46: -22634.016
+Current log-likelihood at step 47: -22634.005
+Current log-likelihood at step 48: -22633.996
+Partition-specific rates:  0.951 1.040 1.032
+Parameters optimization took 47 rounds (1.438 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Partition information was printed to cats_genes.nex.best_model.nex
+BEST SCORE FOUND : -22633.996
+Creating bootstrap support values...
+Split supports printed to NEXUS file cats_genes.nex.splits.nex
+Total tree length: 2.955
+
+Total number of iterations: 103
+CPU time used for tree search: 32.421 sec (0h:0m:32s)
+Wall-clock time used for tree search: 17.371 sec (0h:0m:17s)
+Total CPU time used: 520.000 sec (0h:8m:39s)
+Total wall-clock time used: 285.120 sec (0h:4m:45s)
+
+Computing bootstrap consensus tree...
+Reading input file cats_genes.nex.splits.nex...
+36 taxa and 150 splits.
+Consensus tree written to cats_genes.nex.contree
+Reading input trees file cats_genes.nex.contree
+Log-likelihood of consensus tree: -22634.047
+
+Analysis results written to: 
+  IQ-TREE report:                cats_genes.nex.iqtree
+  Maximum-likelihood tree:       cats_genes.nex.treefile
+  Likelihood distances:          cats_genes.nex.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          cats_genes.nex.splits.nex
+  Consensus tree:                cats_genes.nex.contree
+  Screen log file:               cats_genes.nex.log
+
+Date and Time: Mon Dec 15 12:27:40 2025

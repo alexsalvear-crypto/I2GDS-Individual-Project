@@ -1,0 +1,10 @@
+#nexus
+begin sets;
+  charset part1 = CO1_aln.fasta: ;
+  charset part2 = CytB_aln.fasta: ;
+  charset part3 = ND1_aln.fasta: ;
+  charpartition mymodels =
+    TIM2+F+R3: part1,
+    TIM2+F+I+G4: part2,
+    TIM2+F+I+R2: part3;
+end;
