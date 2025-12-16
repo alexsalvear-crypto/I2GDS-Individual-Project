@@ -10,13 +10,13 @@ This repository documents a short, reproducible pipeline for reconstructing a ph
 
 ## Linux-based phylogenetic inference
 
-## 00 Environment setup
+### 00 Environment setup
 
-## 01 Sequence concatienation
+### 01 Sequence concatienation
 
-## 02 MAFFT: multiple sequence alignment
+### 02 MAFFT: multiple sequence alignment
 
-## 03 IQ-TREE: phylogenetic inference
+### 03 IQ-TREE: phylogenetic inference
 
 ## Preliminary tree inspection
 
