@@ -86,7 +86,7 @@ To create a partitions file, a new Nexus file was generated:
 nano cats_genes.nex
 ```
 The following content was added to define gene partitions:
-```
+```text
 `# Nexus`
 begin sets;
    charset part1 = CO1_aln.fasta;
@@ -94,6 +94,11 @@ begin sets;
    charset part3 = ND1_aln.fasta;
 end;
 ```
+The presence of the partitions file can be confirmed using:
+```bash
+ls *.nex 
+```
+This should list the newly created partitions file.
 
 ## Preliminary tree inspection
 
