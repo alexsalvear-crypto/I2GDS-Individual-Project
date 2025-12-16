@@ -169,10 +169,12 @@ Plot the tree adding bootstrap values, displaying only values ≥ 70%:
 ```r
 plot(ladderize(t1), cex = 0.6)
 nodelabels(
-  text = ifelse(as.numeric(t1$node.label) >= 70, t1$node.label, ""), #The numeric value represents the minimum bootstrap value displayed.
+  text = ifelse(as.numeric(t1$node.label) >= 70, t1$node.label, ""),
+   #The numeric value represents the minimum bootstrap value displayed.
   cex = 0.5,
   frame = "n",
-  adj = c(1.25, -0.75) #Numeric values control the offset of bootstrap labels and can be adjusted for visual clarity.
+  adj = c(1.25, -0.75)
+   #Numeric values control the offset of bootstrap labels and can be adjusted for visual clarity.
 )
 add.scale.bar()
 ```
