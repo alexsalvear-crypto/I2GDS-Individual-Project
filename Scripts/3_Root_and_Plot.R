@@ -1,6 +1,4 @@
 # Root and plot IQ-TREE tree in R (ape)
-# Run from repo root:
-#   Rscript scripts/05_root_and_plot_tree.R
 # Working directory is the same as in steps 01–03: data/sequences/
 # Input:  cats_genes.nex.treefile  (IQ-TREE output)
 # Output: cats_rooted_tree.pdf
