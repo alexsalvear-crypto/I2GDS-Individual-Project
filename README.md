@@ -1,5 +1,4 @@
-# Multi-gene phylogenetic reconstruction using MAFFT, IQ-TREE, and ape
-
+# Linux and R-based multi-gene phylogenetic reconstruction
 This repository documents a short, reproducible pipeline for reconstructing a phylogeny from multiple genes using Linux-based tools, including MAFFT for sequence alignment and IQ-TREE for maximum-likelihood inference, followed by tree rooting and visualization in R using the ape package. All steps are performed on the Virginia Tech Advanced Research Computing (ARC) system.
 
 ## Introduction
