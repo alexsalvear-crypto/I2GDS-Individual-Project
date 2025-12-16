@@ -77,8 +77,8 @@ If aligned correctly, all files should have the same number of sequences:
 
 <img width="187" height="159" alt="image" src="https://github.com/user-attachments/assets/a0b53a35-bba1-407b-9cb0-968abd914564" />
 
-
 ### 03 IQ-TREE: phylogenetic inference
+
 
 ## Preliminary tree inspection
 
