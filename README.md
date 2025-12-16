@@ -74,7 +74,7 @@ echo "ND1 input:"  && grep '^>' ND1_all.fasta  | wc -l
 echo "ND1 aligned:" && grep '^>' ND1_aln.fasta | wc -l
 ```
 If aligned correctly, all files should have the same number of sequences:
-<img width="337" height="288" alt="image" src="https://github.com/user-attachments/assets/d5e3b5e9-9194-4de5-b3ce-304147a8a375" />
+<img width="187" height="159" alt="image" src="https://github.com/user-attachments/assets/a0b53a35-bba1-407b-9cb0-968abd914564" />
 
 
 ### 03 IQ-TREE: phylogenetic inference
