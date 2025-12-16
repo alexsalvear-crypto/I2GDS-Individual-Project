@@ -48,6 +48,11 @@ cat *ND1*.fasta > ND1_all.fasta
 cat *CytB*.fasta > CytB_all.fasta
 cat *CO1*.fasta > CO1_all.fasta
 ```
+This will generate a single FASTA file for each gene. This can be confirmed using:
+```bash
+ls *_all.fasta
+```
+If using the sample data, three concatenated FASTA files should be listed.
 
 ### 02 MAFFT: multiple sequence alignment
 
