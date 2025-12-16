@@ -77,7 +77,7 @@ If aligned correctly, all files should have the same number of sequences:
 
 <img width="187" height="159" alt="image" src="https://github.com/user-attachments/assets/a0b53a35-bba1-407b-9cb0-968abd914564" />
 
-Concatenation errors will ve evident if values of 0 and 1 appear after this step. See [`Note 2`](Notes/Note_2.md),
+Concatenation errors will ve evident if values of 0 and 1 appear after this step. See [`Note 2`](Notes/Note_2.md).
 
 ### 03 IQ-TREE: phylogenetic inference
 IQ-TREE was used to reconstruct phylogenetic relationships under a maximum-likelihood framework. IQ-TREE can infer trees from a single gene or from multiple genes combined into a partitioned analysis. When multiple genes are used, a partitions file is required to specify the boundaries of each gene in the alignment.
