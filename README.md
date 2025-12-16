@@ -55,6 +55,26 @@ ls *_all.fasta
 If using the sample data, three concatenated FASTA files should be listed.
 
 ### 02 MAFFT: multiple sequence alignment
+MAFFT was used to perform multiple sequence alignment for each gene independently. This step aligns homologous nucleotide positions across all specimens within a gene and generates the alignments required for phylogenetic inference using IQ-TREE. MAFFT is run separately on each concatenated gene file using the `--auto` option, which automatically selects an appropriate alignment algorithm based on the data. The `--reorder` option was used to reorder sequences for optimal alignment.
+
+```bash
+# Input file names depend on the output of the concatenation step.
+# Output file names are arbitrary; here they are formatted as "Gene_aln.fasta".
+mafft --auto --reorder CO1_all.fasta  > CO1_aln.fasta
+mafft --auto --reorder CytB_all.fasta > CytB_aln.fasta
+mafft --auto --reorder ND1_all.fasta  > ND1_aln.fasta
+```
+To confirm the aligments were done correctly, the alignments need to have the same number of sequences as the input files. This can be checked using:
+```bash
+echo "COI input:"  && grep '^>' CO1_all.fasta  | wc -l
+echo "COI aligned:" && grep '^>' CO1_aln.fasta | wc -l
+echo "CytB input:"  && grep '^>' CytB_all.fasta  | wc -l
+echo "CytB aligned:" && grep '^>' CytB_aln.fasta | wc -l
+echo "ND1 input:"  && grep '^>' ND1_all.fasta  | wc -l
+echo "ND1 aligned:" && grep '^>' ND1_aln.fasta | wc -l
+```
+If aligned correctly, all files should have the same number of sequences:
+<img width="704" height="601" alt="image" src="https://github.com/user-attachments/assets/a054a1c0-e25c-4c23-855b-a8a3d029b61b" />
 
 ### 03 IQ-TREE: phylogenetic inference
 
