@@ -1,4 +1,4 @@
-#Note to Self 1: Naming conventions for FASTA files.
+# Note to Self 1: Naming conventions for FASTA files.
 
 FASTA file names must remain consistent and should always include: the gene name, the species name, and a unique specimen identifier.
 Following this convention ensures that sequences can be concatenated and aligned using only a small number of commands, without the need for manual editing.
@@ -9,4 +9,4 @@ Example:
 
 <img width="625" height="289" alt="image" src="https://github.com/user-attachments/assets/f6b6e68d-7b9f-4247-83fe-faffd0c6190d" />
 
-If several FASTA files need to be edited to match these parameters, software such as [BBEdit](https://www.barebones.com/products/bbedit/), or other tools can be used to edit FASTA files in bulk.
+If several FASTA files need to be edited to match these parameters, software such as [`BBEdit`](https://www.barebones.com/products/bbedit/), or other tools can be used to edit FASTA files in bulk.
