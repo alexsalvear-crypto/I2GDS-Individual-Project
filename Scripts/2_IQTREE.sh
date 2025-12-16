@@ -34,3 +34,5 @@ ls -lh "$PARTS"
 # -B 1000: ultrafast bootstrap with 1000 replicates
 # -nt AUTO: auto-detect threads
 iqtree2 -p "$PARTS" -B 1000 -nt AUTO
+
+echo "Done: IQ-TREE phylogenetic inference"
