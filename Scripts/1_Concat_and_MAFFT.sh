@@ -10,18 +10,18 @@ set -euo pipefail
 #   ND1_all.fasta -> ND1_aln.fasta
 
 
-#Load MAFFT module
+# Load MAFFT module
 module load MAFFT/7.526-GCC-13.2.0-with-extensions
 
 echo "MAFFT path: $(which mafft)"
 mafft --version
 module list || true
 
-#Working directory is the same for input & output
+# Working directory is the same for input & output
 SEQ_DIR="data/sequences"
 cd "$SEQ_DIR"
 
-#Concatenate FASTA files per gene
+# Concatenate FASTA files per gene
 cat *ND1*.fasta > ND1_all.fasta
 cat *CytB*.fasta > CytB_all.fasta
 cat *CO1*.fasta > CO1_all.fasta
@@ -29,7 +29,7 @@ cat *CO1*.fasta > CO1_all.fasta
 echo "Concatenated FASTAs:"
 ls -lh *_all.fasta
 
-#Align each gene independently
+# Align each gene independently
 mafft --auto --reorder CO1_all.fasta > CO1_aln.fasta
 mafft --auto --reorder CytB_all.fasta > CytB_aln.fasta
 mafft --auto --reorder ND1_all.fasta > ND1_aln.fasta
@@ -37,7 +37,7 @@ mafft --auto --reorder ND1_all.fasta > ND1_aln.fasta
 echo "Aligned FASTAs:"
 ls -lh *_aln.fasta
 
-#Sanity check: number of sequences must match
+# Sanity check: number of sequences must match
 echo "Sequence count checks (headers):"
 echo "CO1 input:"   && grep -c '^>' CO1_all.fasta
 echo "CO1 aligned:" && grep -c '^>' CO1_aln.fasta
