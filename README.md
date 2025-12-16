@@ -137,3 +137,60 @@ tree <- read.tree("cats_genes.nex.treefile")
 ```
 If the file is read successfully, the tree object will appear in the Environment panel in RStudio (upper right):
 <img width="322" height="134" alt="image" src="https://github.com/user-attachments/assets/a648e6e1-f8c9-4a76-bc78-402873c85a54" />
+
+To inspect the taxa present in the tree, the list of tip labels was examined:
+```r
+tree$tip.label
+```
+This command prints the names of all taxa included in the tree, which can be used to identify appropriate outgroup taxa:
+<img width="540" height="322" alt="image" src="https://github.com/user-attachments/assets/c94e2c8a-d8ec-401f-ba13-931f70bda330" />
+
+An outgroup was specified by assigning the corresponding tip label. For a single outgroup:
+```r
+#Use the name of the outgroup exactly as listed using tree$tip.label
+outgroups <- "034_Nandinia_binotata"
+```
+If multiple outgroups are available, they can be specified as:
+```r
+#Names must be exactly as listed using tree$tip.label
+#"c()" must be used to group all outgroups separated by commas
+outgroups <- c("034_Nandinia_binotata", "033_Manis_tricuspis", "025_Hyaena_hyaena", "011_Canis_lupus", "004_Arctogalidia_trivirgata")
+```
+The tree was rooted using the most distantly related outgroup. For the sample dataset, Manis tricuspis was selected because it is the only non-carnivoran mammal included and represents the sister lineage to Carnivora.
+```r
+#Name of the outgroup used for rooting needs to match the name as listed using tree$tip.label
+t1 <- root(tree, outgroup = "033_Manis_tricuspis", resolve.root = TRUE)
+```
+Once the tree is rooted, ape can add bootstrap values to the tree. To inspect bootstrap support values associated with internal nodes:
+```r
+t1$node.label
+```
+Plot the tree adding bootstrap values, displaying only values ≥ 70%:
+```r
+plot(ladderize(t1), cex = 0.6)
+nodelabels(
+  text = ifelse(as.numeric(t1$node.label) >= 70, t1$node.label, ""), #The numeric value represents the minimum bootstrap value displayed.
+  cex = 0.5,
+  frame = "n",
+  adj = c(1.25, -0.75) #Numeric values control the offset of bootstrap labels and can be adjusted for visual clarity.
+)
+add.scale.bar()
+```
+Once plotted, the tree can be previewed in the bottom right panel of RStudio:
+<img width="2151" height="586" alt="image" src="https://github.com/user-attachments/assets/8b727cce-1cea-4264-b199-ef0863a68de0" />
+
+The rooted and annotated tree was exported as a PDF using the following commands:
+
+```r
+pdf("cats_rooted_tree.pdf", width = 8, height = 10) #Assign a name for the output file.
+plot(ladderize(t1), cex = 0.6)
+nodelabels(
+  text = ifelse(as.numeric(t1$node.label) >= 70, t1$node.label, ""), #Minimum node label value
+  cex = 0.5,
+  frame = "n",
+  adj = c(1.25, -0.75) # adjust to improve label placement/clarity #Node label offset
+)
+add.scale.bar()
+dev.off()
+```
+The output file (cats_rooted_tree.pdf) will be saved in the current working directory.
