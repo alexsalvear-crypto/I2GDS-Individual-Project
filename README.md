@@ -78,7 +78,22 @@ If aligned correctly, all files should have the same number of sequences:
 <img width="187" height="159" alt="image" src="https://github.com/user-attachments/assets/a0b53a35-bba1-407b-9cb0-968abd914564" />
 
 ### 03 IQ-TREE: phylogenetic inference
-
+IQ-TREE was used to reconstruct phylogenetic relationships under a maximum-likelihood framework. IQ-TREE can infer trees from a single gene or from multiple genes combined into a partitioned analysis. When multiple genes are used, a partitions file is required to specify the boundaries of each gene in the alignment.
+For the sample dataset, three genes (**CO1**, **CytB**, and **ND1**) were included and defined as separate partitions ("part1", "part2", and "part3") in a Nexus file.
+To create a partitions file, a new Nexus file was generated:
+```bash
+# Create a new Nexus file
+nano cats_genes.nex
+```
+The following content was added to define gene partitions:
+```
+`# Nexus`
+begin sets;
+   charset part1 = CO1_aln.fasta;
+   charset part2 = CytB_aln.fasta;
+   charset part3 = ND1_aln.fasta;
+end;
+```
 
 ## Preliminary tree inspection
 
