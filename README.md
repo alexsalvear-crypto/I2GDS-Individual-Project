@@ -16,17 +16,17 @@ The pipeline requires FASTA files containing nucleotide sequences, with one file
 ### 00 Module load
 For this pipeline you will need MAFFT and IQ-TREE. These modules are available on the [`VT ARC systems`](https://www.docs.arc.vt.edu/software/01table.html).
 To check available versions of MAFFT and IQ-TREE:
-```
+```bash
 module spider mafft
 module spider iq-tree
 ```
 To load MAFFT and IQ-TREE:
-```
+```bash
 module load MAFFT/7.526-GCC-13.2.0-with-extensions #Or other available versions of MAFFT
 module load IQ-TREE/2.3.6-gompi-2023a #Or other available versions of IQ-TREE
 ```
 To confirm both modules are working:
-```
+```bash
 which mafft
 mafft --version
 which iq-tree
@@ -36,7 +36,8 @@ This will print the loaded version of each tool. Additionally, this can be confi
 ```bash
 module list
 ```
-
+If both MAFFT and IQ-TREE are working, you should see them listed as follows:
+<img width="3166" height="441" alt="image" src="https://github.com/user-attachments/assets/0f6725e5-3cc8-4ae1-a5bb-ebf23be90639" />
 
 ### 01 Sequence concatienation
 
