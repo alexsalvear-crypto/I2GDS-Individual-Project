@@ -177,7 +177,7 @@ nodelabels(
 add.scale.bar()
 ```
 Once plotted, the tree can be previewed in the bottom right panel of RStudio:
-<img width="2151" height="586" alt="image" src="https://github.com/user-attachments/assets/8b727cce-1cea-4264-b199-ef0863a68de0" />
+<img width="975" height="438" alt="image" src="https://github.com/user-attachments/assets/9ac9bc88-5eb6-4f7a-bbe6-39b0e6d392ee" />
 
 The rooted and annotated tree was exported as a PDF using the following commands:
 
