@@ -9,7 +9,7 @@ The pipeline uses MAFFT for multiple sequence alignment, IQ-TREE for maximum-lik
 Example input data are provided to demonstrate the pipeline. The sample dataset consists of FASTA files of gene sequences (CO1, CytB, and ND1) from 31 domestic and wild cat specimens of the subfamily Felinae (Carnivora: Felidae), along with five outgroup taxa from the families Hyaenidae, Viverridae, Nandinidae, Canidae, and Manidae. These data are included as a compressed ZIP file for reproducibility.
 
 ### Required input
-The pipeline requires FASTA files containing nucleotide sequences, with one file per gene region. Sequence headers must not contain spaces and must be identical for each specimen across all genes. Note that inconsistent naming can lead to errors during concatenation and phylogenetic inference, see [Note 1](Notes/Note_1.md). Example input data are provided in the compressed file [`Sample_Data.zip`](Files/Input_Files/Sample_Data.zip).
+The pipeline requires FASTA files containing nucleotide sequences, with one file per gene region. Sequence headers must not contain spaces and must be identical for each specimen across all genes. Note that inconsistent naming can lead to errors during concatenation and phylogenetic inference, see [`Note 1`](Notes/Note_1.md). Example input data are provided in the compressed file [`Sample_Data.zip`](Files/Input_Files/Sample_Data.zip).
 
 ## Linux-based phylogenetic inference
 
