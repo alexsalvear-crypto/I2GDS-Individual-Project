@@ -39,8 +39,8 @@ module list
 If both MAFFT and IQ-TREE are working, you should see them listed as follows:
 <img width="3166" height="441" alt="image" src="https://github.com/user-attachments/assets/0f6725e5-3cc8-4ae1-a5bb-ebf23be90639" />
 
-### 01 Sequence concatienation
-Sequences were concatenated prior to alignment to generate one combined FASTA file per gene. Each concatenated file contains sequences from all specimens for a single gene and serves as the input for multiple sequence alignment. In the provided sample data, three gene regions are used (**CO1**, **CytB**, and **ND1**). Three concatenated FASTA files are generated, one for each gene accordingly.
+### 01 Sequence concatenation
+Sequences were concatenated prior to alignment to generate one combined FASTA file per gene. Each concatenated file contains sequences from all specimens for a single gene and serves as the input for multiple sequence alignment. In the provided sample data, three gene regions are used (**CO1**, **CytB**, and **ND1**). Three concatenated FASTA files are generated, one for each gene accordingly. See [`Note 2`](Notes/Note_2.md) for possible concatenation errors.
 ```bash
 #Using "*" and the gene name will concatenate all FASTA files for that gene in the working directory.
 #Output file names are arbitrary, here they are formatted as "Gene_all.fasta".
