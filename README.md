@@ -116,3 +116,12 @@ The IQ-TREE `.treefile` can be uploaded directly to iTOL for preliminary inspect
 ## R-based visualization
 
 ### 05 Ape: tree rooting and plotting
+The phylogenetic tree produced by IQ-TREE can be rooted and visualized in R using the **ape** package. When using RStudio through the VT ARC Open OnDemand interface, files located in the same working directory (including the `.treefile`) can be accessed directly without additional file transfer steps.
+The **ape** package is available in the VT ARC RStudio environment. This can be confirmed by loading the library and checking the installed version:
+
+```r
+library(ape)
+# If the library loads without errors, ape is installed and ready to use.
+packageVersion("ape")
+# This will display the installed version of ape
+```
